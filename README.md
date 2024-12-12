@@ -11,9 +11,6 @@ This is the official implementation of Meta-Learning for Personalized Estimated 
 * **ETA**: It is a real-world trajectory dataset sampled from the Navinfo Maps in China.
 * For the full datasets of Meta-PETA, please feel free to contact fengzebang8336@navinfo.com
 
-### Train and test
+### Code
+The source codes of WDC and Meta-PETA
 
-Train and evaluate the model:
-```sh
-python train.py
-```
