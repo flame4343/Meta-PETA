@@ -12,5 +12,5 @@ This is the official implementation of Meta-Learning for Personalized Estimated 
 * For the full datasets of Meta-PETA, please feel free to contact fengzebang8336@navinfo.com
 
 ### Code
-The source codes of WDC and Meta-PETA
+* The source codes of WDC and Meta-PETA
 
