@@ -14,5 +14,5 @@ This is the official implementation of Meta-Learning for Personalized Estimated 
 
 Train and evaluate the model:
 ```sh
-python main.py --dataset ETA
+python train.py
 ```
