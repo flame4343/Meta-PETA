@@ -1,5 +1,5 @@
 # Meta-PETA
-This is the official implementation of Meta-Learning for Personalized Estimated Time of Arrival Prediction.
+This is the official implementation of Meta Learning for Personalized Estimated Time of Arrival Prediction.
 
 ## Environment
 * Python=3.7
