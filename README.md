@@ -1,5 +1,5 @@
 # Meta-PETA
-This is the official implementation of Meta-Learning for Personalized Estimated Time of Arrival Prediction
+This is the official implementation of Meta-Learning for Personalized Estimated Time of Arrival Prediction.
 
 ## Environment
 * Python=3.7
@@ -8,7 +8,8 @@ This is the official implementation of Meta-Learning for Personalized Estimated 
 * learn2learn=0.2.1
 
 ## Datasets
-* **ETA**: It is a real-world dataset trajectory dataset, sampled from the Navinfo Maps in Beijing, China.
+* **ETA**: It is a real-world trajectory dataset sampled from the Navinfo Maps in China.
+* For the full datasets of Meta-PETA, please feel free to contact fengzebang8336@navinfo.com
 
 ### Train and test
 
