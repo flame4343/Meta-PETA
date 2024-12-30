@@ -11,7 +11,7 @@ from models.model import *
 # Argument parser for configuring the model
 parser = argparse.ArgumentParser()
 parser.add_argument('--dataset', default='ETA', help='Dataset name')
-parser.add_argument('--model_path', default='best_model', help='Path to save the trained model')
+parser.add_argument('--model_path', default='./', help='Path to save the trained model')
 parser.add_argument('--car_num', type=int, default=10000, help='Number of cars in the dataset')
 parser.add_argument('--static_feature_num', type=int, default=6, help='Number of static features')
 parser.add_argument('--embedding_size', type=int, default=10, help='Embedding size for features')
