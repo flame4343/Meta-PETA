@@ -14,16 +14,16 @@ import torch.distributed as dist
 from torch.nn.parallel import DistributedDataParallel as ddp
 import torch.multiprocessing as mp
 from tqdm import tqdm
-from datasets.eta_wdr_dataset import ETAWDRDataset, FINETUNE_TEST_SET
+from datasets.eta_wdr_dataset import ETAWDRDataset
 from datasets.truncate_dataset import TruncateDataset
 from datasets.collate_functions import collate_batch
 from utils.seq_sampler_dist import My_sampler
 from torch.utils.data import DataLoader, DistributedSampler
 from utils.seq_sampler import SequentialDistributedSampler as seq_sampler
-from models.wdr_model import wdc
-from torch.utils.tensorboard import SummaryWriter
-from indices_calc.satisfaction_score_fun import satisfaction_score_calc
-from indices_calc.smape_indices import calc_indices
+from models.wdc_model import WDC
+# from torch.utils.tensorboard import SummaryWriter
+# from indices_calc.satisfaction_score_fun import satisfaction_score_calc
+# from indices_calc.smape_indices import calc_indices
 
 def get_parser():
     parser = argparse.ArgumentParser(description="Training eta wdc regression model")
@@ -33,7 +33,6 @@ def get_parser():
     parser.add_argument("--batch_size", type=int, default=32, help="batch size")
     parser.add_argument("--lr", type=float, default=2e-5, help="learning rate")
     parser.add_argument("--workers", type=int, default=0, help="num workers for dataloader")
-    parser.add_argument("--weight_decay", type=float, default=0.0, help="Weight decay if we apply some.")
     parser.add_argument("--weight_decay", type=float, default=0.01, help="Weight decay if we apply some.")
     parser.add_argument("--adam_epsilon", type=float, default=1e-8, help="Epsilon for Adam optimizer.")
     parser.add_argument("--optimizer", choices=["adamw", "sgd"], default="adamw", help="loss type")
